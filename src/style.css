@@ -76,17 +76,27 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #1b1a2e81 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
-
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 20px; /* Ajusta según sea necesario */
+  z-index: 1000;
+}
 .navbar {
-  position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0.3rem 1.5rem !important;
   font-size: 1.2rem !important;
+  background-color: #1b1a2ec5 !important; /* Color de fondo */
+  border-radius: 40px !important; /* Bordes redondeados */
+  width: fit-content !important; /* Ajusta el ancho al contenido */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important; /* Sombra sutil */
 }
 
 .navbar-toggler {
@@ -208,6 +218,15 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  height: auto;
+}
+
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s; /* Change to speed up or slow down */
@@ -320,7 +339,7 @@ button:focus {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-top: 40px !important;
 }
 
 .home-about-description {
@@ -540,7 +559,6 @@ button:focus {
 /* --------- */
 /* About */
 /* --------- */
-
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -552,7 +570,6 @@ button:focus {
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
-  padding: 10px !important;
   opacity: 0.93 !important;
   border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
@@ -740,3 +757,32 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/*Contact*/
+.contact-section {
+  padding: 50px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #0077b5; /* LinkedIn color */
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.email-btn {
+  color: #d14836; /* Email icon color */
+}
+
+.email-btn:hover {
+  transform: scale(1.1);
+}
+

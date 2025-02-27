@@ -22,45 +22,26 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaCss3Alt />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaBootstrap />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVite />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedux />
-      </Col>{" "}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSocketdotio />
-      </Col>{" "}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiExpress />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaGithub />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
-      </Col>
+      {[
+        { icon: <FaHtml5 />, name: "HTML5" },
+        { icon: <FaCss3Alt />, name: "CSS3" },
+        { icon: <FaBootstrap />, name: "Bootstrap" },
+        { icon: <DiJavascript1 />, name: "JavaScript" },
+        { icon: <DiReact />, name: "React" },
+        { icon: <SiVite />, name: "Vite" },
+        { icon: <SiRedux />, name: "Redux" },
+        { icon: <SiSocketdotio />, name: "Socket.io" },
+        { icon: <SiExpress />, name: "Express.js" },
+        { icon: <DiNodejs />, name: "Node.js" },
+        { icon: <DiMongodb />, name: "MongoDB" },
+        { icon: <FaGithub />, name: "GitHub" },
+        { icon: <SiMysql />, name: "MySQL" },
+      ].map((tech, index) => (
+        <Col key={index} xs={4} md={2} className="tech-icons text-center">
+          <div>{tech.icon}</div>
+          <span style={{ fontSize: "1.5rem" }}>{tech.name}</span>
+        </Col>
+      ))}
     </Row>
   );
 }

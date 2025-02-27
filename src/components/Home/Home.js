@@ -13,29 +13,32 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+              <h1 className="heading" style={{ paddingBottom: 15 }}>
+                Hi There!
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> FEDERICA IGLESIAS</strong>
+                I'M <strong className="main-name">FEDERICA IGLESIAS</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 50, textAlign: "left" }} className="mb-4">
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col
+              md={5}
+              className="d-flex justify-content-center align-items-center"
+              style={{ paddingBottom: 20 }}
+            >
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "400px",  }}
+                className="img-fluid profile-img"
+                style={{ maxHeight: "400px" }}
               />
             </Col>
           </Row>

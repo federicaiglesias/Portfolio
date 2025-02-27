@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
+import Home2 from "../Home/Home2";
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
+        <Home2 />
       </Container>
     </Container>
   );
