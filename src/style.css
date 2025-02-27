@@ -273,6 +273,11 @@ button:focus {
 .home-header {
   padding-top: 80px !important;
 }
+@media (max-width: 768px) {
+  .home-header {
+    padding-top: 20px !important;
+  }
+}
 
 .home-section {
   position: relative;
@@ -786,4 +791,3 @@ button:focus {
 .email-btn:hover {
   transform: scale(1.1);
 }
-
