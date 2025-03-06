@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import igourmet from "../../Assets/Projects/igourmet.png";
 import igourmetadmin from "../../Assets/Projects/igourmetadmin.png";
-import shifumi from "../../Assets/Projects/shifumi.png";
+import shifumi from "../../Assets/Projects/shifumi1.png";
 import Home2 from "../Home/Home2";
 
 function Projects() {
