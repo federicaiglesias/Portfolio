@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import igourmet from "../../Assets/Projects/igourmet.png";
 import igourmetadmin from "../../Assets/Projects/igourmetadmin.png";
 import shifumi from "../../Assets/Projects/shifumi1.png";
+import kidflix from "../../Assets/Projects/kidflix.png";
 import Home2 from "../Home/Home2";
 
 function Projects() {
@@ -75,6 +76,28 @@ function Projects() {
               }
               ghLink="https://github.com/federicaiglesias/ShiFuMi"
               demoLink="https://shi-fu-mi-phi.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={kidflix}
+              isBlog={false}
+              title="kidflix movies 🎬✨ "
+              description={
+                <>
+                  I created the Kidflix platform to offer kids an exciting and
+                  safe way to explore trailers of their favorite movies and
+                  shows. Built using React, the app is designed with a playful
+                  and user-friendly interface, ensuring a fun and smooth
+                  experience. I focused on vibrant colors, simple navigation,
+                  and engaging animations that make it easy for kids to enjoy.
+                  With a responsive design, Kidflix works perfectly on any
+                  device. Plus, each trailer is accompanied by cheerful sound
+                  effects to add to the excitement!
+                </>
+              }
+              ghLink="https://github.com/federicaiglesias/kidflix"
+              demoLink="https://kidflix-kappa.vercel.app/"
             />
           </Col>
         </Row>
