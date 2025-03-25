@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/FedericaIglesias_cv_2024 (1)-2.pdf";
+import pdf from "../../Assets/../Assets/2025FedericaIglesias.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -49,7 +49,7 @@ function ResumeNew() {
             &nbsp;Download CV
           </Button>
         </Row>
-        <Home2/>
+        <Home2 />
       </Container>
     </div>
   );
