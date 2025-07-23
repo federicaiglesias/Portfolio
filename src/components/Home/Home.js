@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/imgFI.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
 
 function Home() {
   return (
@@ -19,14 +18,12 @@ function Home() {
                   👋🏻
                 </span>
               </h1>
-
-              <h1 className="heading-name">
-                I'M <strong className="main-name">FEDERICA IGLESIAS</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }} className="mb-4">
-                <Type />
-              </div>
+              <p className="heading-name">
+                Hi, I’m Federica, a Full-Stack Developer passionate about
+                building modern web apps with the <strong>MERN stack</strong>,
+                React, Next.js, and AI-powered solutions. I transform ideas into
+                user-friendly, scalable, and innovative products.
+              </p>
             </Col>
 
             <Col

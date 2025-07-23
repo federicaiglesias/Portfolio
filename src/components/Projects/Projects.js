@@ -7,6 +7,7 @@ import igourmetadmin from "../../Assets/Projects/igourmetadmin.png";
 import shifumi from "../../Assets/Projects/shifumi1.png";
 import kidflix from "../../Assets/Projects/kidflix.png";
 import Home2 from "../Home/Home2";
+import courseapied from "../../Assets/Projects/courseapied.png"
 
 function Projects() {
   return (
@@ -17,6 +18,26 @@ function Projects() {
           MY RECENT <strong className="purple">PROJECTS </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={courseapied}
+              isBlog={false}
+              title="Course a pied"
+              description={
+                <>
+                  Courses à Pied is a multilingual event website designed to
+                  showcase and manage running events efficiently. Built with
+                  Next.js 14, Supabase, and a headless CMS, it features dynamic
+                  SEO metadata, responsive design, and event pagination for an
+                  optimal user experience. The platform allows easy content
+                  management, seamless navigation, and high performance,
+                  achieving top scores on Lighthouse tests. 🚀
+                </>
+              }
+              ghLink="https://github.com/federicaiglesias/courses-a-pied-uclic"
+              demoLink="https://courses-a-pied-uclic.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={igourmet}
