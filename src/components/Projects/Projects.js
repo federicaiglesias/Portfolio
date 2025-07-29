@@ -7,7 +7,8 @@ import igourmetadmin from "../../Assets/Projects/igourmetadmin.png";
 import shifumi from "../../Assets/Projects/shifumi1.png";
 import kidflix from "../../Assets/Projects/kidflix.png";
 import Home2 from "../Home/Home2";
-import courseapied from "../../Assets/Projects/courseapied.png"
+import courseapied from "../../Assets/Projects/courseapied.png";
+import fuelup from "../../Assets/Projects/fuelup.png";
 
 function Projects() {
   return (
@@ -36,6 +37,26 @@ function Projects() {
               }
               ghLink="https://github.com/federicaiglesias/courses-a-pied-uclic"
               demoLink="https://courses-a-pied-uclic.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fuelup}
+              isBlog={false}
+              title="FuelUp – AI-Powered Recipe Generator for Athletes 🏋️‍♂️🥗"
+              description={
+                <>
+                  FuelUp is a web app that generates personalized recipes for
+                  athletes based on their personal data (age, weight, sport,
+                  etc.) and available ingredients. It uses OpenAI’s API 🤖 to
+                  create nutritious, performance-oriented meals. Built with
+                  Next.js, React, TypeScript, Tailwind CSS, and Node.js/Express,
+                  FuelUp delivers a smooth UX with a step-by-step form, dynamic
+                  recipe display, and a modern, sporty design.
+                </>
+              }
+              ghLink="https://github.com/federicaiglesias/fuelup"
+              demoLink="https://fuelup-five.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
